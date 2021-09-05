@@ -52,7 +52,6 @@ const controllers = {
   searchTracks: async (req, res) => {
     const { searchTerm } = req.params;
     const searchedTracks = await getSearchTracks(searchTerm);
-    console.log({ searchedTracks });
     res.json({ searchedTracks });
   },
 };
